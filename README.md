@@ -4,7 +4,7 @@ Custom POS receipt layout module for Odoo 17 (Point of Sale).
 
 ## Overview
 
-This module overrides the default Odoo POS receipt template with a custom layout tailored for Sail Specials.
+This module overrides the default Odoo POS receipt template with a custom layout tailored for Sailspecials.
 
 ## Features
 
@@ -20,8 +20,4 @@ This module overrides the default Odoo POS receipt template with a custom layout
 
 1. Copy the `sailspecials_pos_receipt` folder into your Odoo addons directory.
 2. Update the app list in Odoo.
-3. Install the **Sail Specials POS Receipt** module from the Apps menu.
-
-## License
-
-LGPL-3
+3. Install the **Sailspecials POS Receipt** module from the Apps menu.
