@@ -1,4 +1,4 @@
-# Sail Specials POS Receipt
+# Sailspecials POS Receipt
 
 Custom POS receipt layout module for Odoo 17 (Point of Sale).
 
