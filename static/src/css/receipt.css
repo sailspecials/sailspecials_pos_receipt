@@ -1,0 +1,50 @@
+/* 80mm thermal receipt width */
+.pos-receipt,
+.styled-receipt {
+    width: 80mm;
+    max-width: 80mm;
+    box-sizing: border-box;
+    padding: 0 4px !important;
+    margin: 0 !important;
+}
+
+@media print {
+    .pos-receipt,
+    .styled-receipt {
+        width: 80mm;
+        max-width: 80mm;
+        padding: 0 4px !important;
+        margin: 0 !important;
+    }
+}
+
+/* Tighten receipt header spacing */
+.pos-receipt-contact {
+    margin-top: 0 !important;
+    margin-bottom: 2px !important;
+}
+
+.pos-receipt > br {
+    display: none;
+}
+
+.sailspecials-qr-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.sailspecials-qr-text {
+    font-size: 10px;
+    text-align: right;
+    flex: 1;
+}
+
+.sailspecials-qr-img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
