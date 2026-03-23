@@ -1,7 +1,7 @@
 {
-    'name': 'Sail Specials POS Receipt',
+    'name': 'Sailspecials POS Receipt',
     'version': '17.0.1.0.0',
-    'summary': 'Custom POS receipt layout for Sail Specials',
+    'summary': 'Custom POS receipt layout for Sailspecials',
     'category': 'Point of Sale',
     'depends': ['point_of_sale'],
     'assets': {
