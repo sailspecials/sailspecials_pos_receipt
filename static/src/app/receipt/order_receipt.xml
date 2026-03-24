@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
 
-    <!-- Remove logo and tracking number counter from receipt header -->
+    <!-- Remove logo, tracking number, and excess whitespace from receipt header -->
     <t t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
         <xpath expr="//img[contains(@class,'pos-receipt-logo')]" position="replace"/>
         <xpath expr="//h1[contains(@class,'tracking-number')]" position="replace"/>
         <xpath expr="//div[contains(@class,'fw-bolder')]" position="replace"/>
+        <!-- br before contact block (was after logo) -->
+        <xpath expr="//div[contains(@class,'pos-receipt-contact')]/preceding-sibling::br[1]" position="replace"/>
+        <!-- two br's after contact block -->
+        <xpath expr="//div[contains(@class,'pos-receipt-contact')]/following-sibling::br[1]" position="replace"/>
+        <xpath expr="//div[contains(@class,'pos-receipt-contact')]/following-sibling::br[1]" position="replace"/>
     </t>
 
     <!-- Restructure QR code: smaller, right-aligned, text beside it -->
