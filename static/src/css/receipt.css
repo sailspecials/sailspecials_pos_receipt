@@ -1,31 +1,14 @@
-/* 80mm thermal receipt width */
-.pos-receipt,
+/* Symmetric padding — let the browser/print dialog control the paper width */
 .styled-receipt {
-    width: 80mm;
-    max-width: 80mm;
-    box-sizing: border-box;
-    padding: 0 4px !important;
+    padding: 8px !important;
+    padding-bottom: 8px !important;
     margin: 0 !important;
-}
-
-@media print {
-    .pos-receipt,
-    .styled-receipt {
-        width: 80mm;
-        max-width: 80mm;
-        padding: 0 4px !important;
-        margin: 0 !important;
-    }
 }
 
 /* Tighten receipt header spacing */
 .pos-receipt-contact {
     margin-top: 0 !important;
     margin-bottom: 2px !important;
-}
-
-.pos-receipt > br {
-    display: none;
 }
 
 .sailspecials-qr-block {
