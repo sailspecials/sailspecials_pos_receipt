@@ -37,6 +37,12 @@
             </div>
         </xpath>
         <xpath expr="//p[text()='Powered by Odoo']" position="replace"/>
+        <!-- Add Code 128 barcode with POS reference at the bottom -->
+        <xpath expr="//div[@id='order-date']" position="after">
+            <div class="text-center mt-2">
+                <img t-att-src="'/report/barcode/Code128/' + props.data.name" style="width:100%; max-height:60px;"/>
+            </div>
+        </xpath>
     </t>
 
 </templates>
