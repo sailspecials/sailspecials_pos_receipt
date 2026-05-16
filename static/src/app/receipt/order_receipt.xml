@@ -40,7 +40,7 @@
         <!-- Add Code 128 barcode with POS reference at the bottom -->
         <xpath expr="//div[@id='order-date']" position="after">
             <div class="text-center mt-2">
-                <img t-att-src="'/report/barcode/Code128/' + props.data.name.replace('Order ', '')" style="width:50%; max-height:30px;"/>
+                <img t-att-src="'/report/barcode/Code128/' + props.data.name.replace('Order ', '') + '?width=800&amp;height=100'" style="width:85%; max-height:30px;"/>
             </div>
         </xpath>
     </t>
