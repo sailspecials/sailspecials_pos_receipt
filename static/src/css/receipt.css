@@ -1,6 +1,6 @@
 /* Symmetric padding — let the browser/print dialog control the paper width */
 .styled-receipt {
-    padding: 2px !important;
+    padding: 8px !important;
     padding-bottom: 8px !important;
     margin: 0 !important;
 }
